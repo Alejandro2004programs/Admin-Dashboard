@@ -6,6 +6,8 @@
     box-sizing: border-box;
 }
 
+/* Grid Layout */
+
 body {
     height: 100dvh;
     width: 100dvw;
@@ -36,3 +38,41 @@ body {
     grid-row: 2 / 3;
     border: 2px solid black;
 }
+
+/* Header Layout */
+
+.image1, .image2, .lookUpImage, .image3 {
+    border: 2px solid black;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+}
+
+.header1 {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+}
+
+.header1Left {
+    display: flex;
+    align-items: center;
+}
+
+.header1Right {
+    display: flex;
+    align-items: center;
+}
+
+.header2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header2Left {
+    display: flex;
+}
+
+/* Main Content Layout */
+
