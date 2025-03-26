@@ -76,3 +76,62 @@ body {
 
 /* Main Content Layout */
 
+.main-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 24px;
+    padding: 24px;
+}
+
+.projectsContainer, .announcementsContainer, .trendingContainer {
+    border: 2px solid blue;
+}
+
+.projectsContainer {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.announcementsContainer {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.trendingContainer {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+/* Projects Layout and Styling?*/
+
+.projectsContainer {
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 10fr;
+}
+
+.projectsHeader {
+    grid-column: 1 / 1;
+    grid-row: 1 / 2;
+}
+
+.projectsContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 16px;
+    grid-column: 1 / 1;
+    grid-row: 2 / 3;
+}
+
+.project {
+    border: 2px solid red;
+}
+
+
+
+
+
+
