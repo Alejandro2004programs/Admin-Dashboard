@@ -14,11 +14,11 @@ body {
 }
 
 .container {
-    height: 100%;
+    min-height: 100%;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 200px 4fr;
 }
 
 .sidebar {
@@ -78,7 +78,7 @@ body {
 
 .main-content {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2.5fr 250px;
     grid-template-rows: 1fr 1fr;
     gap: 24px;
     padding: 24px;
@@ -86,6 +86,10 @@ body {
 
 .projectsContainer, .announcementsContainer, .trendingContainer {
     border: 2px solid blue;
+}
+
+.announcementsContainer, .trendingContainer {
+    height: 300px;
 }
 
 .projectsContainer {
@@ -109,7 +113,7 @@ body {
     border-radius: 16px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 10fr;
+    grid-template-rows: 1fr 15fr;
 }
 
 .projectsHeader {
@@ -119,19 +123,26 @@ body {
 
 .projectsContent {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 16px;
+    gap: 24px;
     grid-column: 1 / 1;
     grid-row: 2 / 3;
 }
 
 .project {
     border: 2px solid red;
+    height: 200px;
 }
 
+/* "Trending Section" Layout and Styling */
 
 
-
+.trendingImages {
+    border: 2px solid black;
+    border-radius: 16px;
+    width: 32px;
+    height: 32px;
+}
 
 
